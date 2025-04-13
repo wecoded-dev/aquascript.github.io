@@ -2,8 +2,8 @@
 Your Favorite Fake JSON API for Testing & Prototyping  
 
 [![Status](https://img.shields.io/badge/status-under--construction-yellow)]([https://wecoded.dev](https://dev.to/hanzla-baig/aquascript-24af))
-[![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
-[![Tech Stack](https://img.shields.io/badge/techstack-HTML%2C%20CSS%2C%20JS%2C%20jQuery%20JSON-informational)]([https://wecoded.dev](https://dev.to/hanzla-baig/aquascript-24af))
+[![License](https://img.shields.io/badge/license-Nill-blue)](./LICENSE)
+[![Tech Stack](https://img.shields.io/badge/techstack-HTML%2C%20CSS%2C%20JS%2C%20jQuery,%20JSON-informational)]([https://wecoded.dev](https://dev.to/hanzla-baig/aquascript-24af))
 [![Open Source](https://img.shields.io/badge/open--source-yes-brightgreen)](https://github.com/hanzla-dev/aquascript)
 [![Made with ❤️](https://img.shields.io/badge/made%20with-%E2%9D%A4-red)]([https://wecoded.dev](https://dev.to/hanzla-baig/aquascript-24af))
 
