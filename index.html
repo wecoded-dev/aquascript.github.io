@@ -3,95 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> AquaScript | For Develoers By Developers</title>
+  <link rel="icon" href="assets/Aqua_icon.png" type="image/x-icon">
+  <title>AquaScript | Free JSON APIs for Developers</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      background-color: #bce0ff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      overflow-x: hidden;
-    }
-    .navbar-ultra {
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(20px);
-      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
-      border-radius: 0 0 30px 30px;
-      padding: 1rem 2rem;
-      animation: fadeInDown 1s ease-in-out;
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .navbar-ultra .nav-link {
-      color: white !important;
-      position: relative;
-      padding: 12px 20px;
-      font-weight: bold;
-      transition: 0.4s ease;
-      font-size: 1.1rem;
-    }
-    .navbar-ultra .nav-link::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 3px;
-      bottom: 0;
-      left: 50%;
-      background: linear-gradient(to right, #ff6ec4, #7873f5);
-      transition: 0.4s ease;
-      transform: translateX(-50%);
-    }
-    .navbar-ultra .nav-link:hover::after {
-      width: 80%;
-    }
-    .navbar-ultra .nav-link:hover {
-      color: #ff6ec4 !important;
-      transform: scale(1.1);
-    }
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .navbar-brand img {
-      height: 40px;
-      animation: glow 2s infinite alternate;
-    }
-    .logo-text {
-      font-size: 28px;
-      font-weight: 900;
-      background: linear-gradient(to right, #00f7ff, #ff6ec4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
-    }
-    @keyframes glow {
-      from { filter: drop-shadow(0 0 5px #00f7ff); }
-      to { filter: drop-shadow(0 0 20px #ff6ec4); }
-    }
-    @media (max-width: 768px) {
-      .navbar-ultra .nav-link {
-        text-align: center;
-        padding: 10px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="global.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-ultra">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-ultra shadow-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="background-removed.png" alt="Logo">
-        <span class="logo-text"></span>
+        <img src="assets/background-removed.png" alt="Logo">
       </a>
       <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -99,10 +27,10 @@
             <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link" href="services.html">APIs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="docs.html">Documentations</a>
+            <a class="nav-link" href="docs.html">Documentation</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -112,6 +40,131 @@
     </div>
   </nav>
 
+  <header class="hero-section text-white">
+    <div class="container py-5 text-center">
+      <h1 class="display-3 fw-bold mb-4">Free JSON APIs for Developers</h1>
+      <p class="lead mb-5" style="max-width: 700px; margin: 0 auto;">
+        High-quality, reliable JSON data APIs for your projects. 
+        Easy to integrate, free to use, and constantly updated.
+      </p>
+      
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Books API</h3>
+            <p>Comprehensive book data including titles, authors, genres, and more.</p>
+            <a href="book.html" class="btn btn-api">Explore</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Books++ API</h3>
+            <p>Discover an enhanced collection of books with rich metadata.</p>
+            <a href="#books-plus" class="btn btn-api">Explore More</a>
+          </div>
+        </div>        
+        
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-film"></i>
+            </div>
+            <h3>Movies API</h3>
+            <p>Detailed movie information, ratings, cast, and streaming availability.</p>
+            <a href="#movies" class="btn btn-api">Explore</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-clapperboard"></i>
+            </div>
+            <h3>Movies++ API</h3>
+            <p>Explore an enhanced movie experience with rich details, names, tags, and images.</p>
+            <a href="#movies-plus" class="btn btn-api">Dive In</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <h3>Quotes API</h3>
+            <p>Thousands of inspirational, funny, and motivational quotes.</p>
+            <a href="#quotes" class="btn btn-api">Explore</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-quote-left"></i>
+            </div>
+            <h3>Quotes++</h3>
+            <p>Curated quotes to uplift, enlighten from timeless minds and aspiring thinkers.</p>
+            <a href="#quotes" class="btn btn-api">Explore Wisdom</a>
+          </div>
+        </div>        
+      </div>
+      
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-laugh-squint"></i>
+            </div>
+            <h3>Jokes API</h3>
+            <p>Clean, funny jokes for all audiences. Perfect for entertainment apps.</p>
+            <a href="#jokes" class="btn btn-api">Explore</a>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Users API</h3>
+            <p>Fake user data for testing and development purposes.</p>
+            <a href="#users" class="btn btn-api">Explore</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-laugh-beam"></i>
+            </div>
+            <h3>Programming Jokes API</h3>
+            <p>Inject some fun into your code! Get developer jokes that only true geeks will understand.</p>
+            <a href="#programming-jokes" class="btn btn-api">Laugh Now</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="api-card">
+            <div class="api-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Developers Books API</h3>
+            <p>A curated shelf of must-read programming books from beginner guides to deep dives into software craftsmanship.</p>
+            <a href="#developers-books" class="btn btn-api">Start Reading</a>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </header>
+
+  <script src="nav/nav.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
@@ -125,7 +178,3 @@
   </script>
 </body>
 </html>
-
-
-
-
