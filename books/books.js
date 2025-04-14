@@ -1,3 +1,4 @@
+//Fetching book lists in the book.json....
 let books = [];
 
 fetch("./api/books.json")
@@ -140,6 +141,8 @@ style.textContent = `
     `;
 document.head.appendChild(style);
 
+
+//nav-link script 
 $(document).ready(function () {
   $(".nav-link").hover(
     function () {
@@ -149,4 +152,17 @@ $(document).ready(function () {
       $(this).css("text-shadow", "none");
     }
   );
+});
+
+
+//loading spinner script before the book-list displays 
+document.addEventListener("DOMContentLoaded", function () {
+  const loadingSpinner = document.getElementById("loadingSpinner");
+  const booksContainer = document.getElementById("booksContainer");
+
+  // Simulate loading delay
+  setTimeout(() => {
+    loadingSpinner.classList.add("d-none");
+    booksContainer.classList.remove("d-none");
+  }, 2500); 
 });
