@@ -9,7 +9,7 @@ Your Favorite Fake JSON API for Testing & Prototyping
 
 Welcome to **AquaScript** — a fast, simple, and developer-friendly platform to fetch blazing-fast fake JSON data APIs for your web and app projects.
 
-> **Crafted with passion by Hanzla at ´WeCoded´**
+> **Crafted with passion by Hanzla Baig, Precious Kelvin and Madhurima Rawat (HP&M) at ´WeCoded´**
 
 ---
 
