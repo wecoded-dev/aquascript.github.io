@@ -1,152 +1,143 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About | AquaScript</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-  <style>
-    
-
-    .about-section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-      padding: 60px 20px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .about-section::before, .about-section::after {
-      content: '';
-      position: absolute;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(0, 224, 255, 0.15) 0%, transparent 60%);
-      animation: move 10s linear infinite alternate;
-      z-index: 0;
-    }
-
-    .about-section::before {
-      width: 400px;
-      height: 400px;
-      top: -100px;
-      left: -100px;
-    }
-
-    .about-section::after {
-      width: 300px;
-      height: 300px;
-      bottom: -80px;
-      right: -80px;
-    }
-
-    @keyframes move {
-      from { transform: translate(0, 0); }
-      to { transform: translate(20px, 30px); }
-    }
-
-    .about-content {
-      z-index: 2;
-      position: relative;
-      max-width: 900px;
-    }
-
-    .about-title {
-      font-size: 3rem;
-      font-weight: 700;
-      background: linear-gradient(90deg, #00e0ff, #0078ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: pulse 2s infinite alternate;
-    }
-
-    @keyframes pulse {
-      0% { text-shadow: 0 0 10px #00e0ff; }
-      100% { text-shadow: 0 0 20px #0078ff; }
-    }
-
-    .about-text {
-      font-size: 1.2rem;
-      margin-top: 20px;
-      color: #ccc;
-      line-height: 1.8;
-    }
-
-    .btn-explore {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 12px 30px;
-      font-size: 1.1rem;
-      font-weight: 600;
-      border-radius: 50px;
-      background: linear-gradient(135deg, #00e0ff, #0078ff);
-      border: none;
-      color: #fff;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .btn-explore:hover {
-      background: linear-gradient(135deg, #0078ff, #00e0ff);
-      transform: translateY(-5px);
-      box-shadow: 0 4px 20px rgba(0, 224, 255, 0.4);
-    }
-
-    footer {
-      background: #0d0d0d;
-      text-align: center;
-      padding: 20px 0;
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 50px;
-    }
-  </style>
+  <title>About | AquaScript - Free JSON APIs for Developers</title>
+  <script src="https://kit.fontawesome.com/69b7050fd6.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="about/about.css">
+  <link rel="icon" href="assets/" type="image/x-icon">
+  <link rel="stylesheet" href="global.css">
 </head>
-
 <body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-ultra shadow-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/background-removed.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">APIs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="docs.html">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<section class="about-section">
-  <div class="about-content">
-    <h1 class="about-title">About AquaScript APIs</h1>
-    <p class="about-text">
-      <strong>AquaScript</strong> is your gateway to a world of powerful, developer-centric APIs.<br><br>
-      We offer a diverse range of high-quality, free JSON APIs covering Books, Movies, Quotes, Jokes, Users, and more — all designed for ease of integration, blazing-fast performance, and constant updates.<br><br>
-      Whether you're building apps, websites, bots, or learning projects, AquaScript empowers you with reliable endpoints to bring your ideas to life.<br><br>
-      Dive into innovation, unlock limitless possibilities, and accelerate your development journey with AquaScript!
-    </p>
-    <a href="index.html" class="btn-explore">Explore APIs</a>
-  </div>
-</section>
+  <section class="about-section">
+    <div class="about-content">
+      <h1 class="about-title">About AquaScript</h1>
+      <p class="about-text">
+        <span class="about-highlight">AquaScript</span> is a premier provider of free JSON APIs designed to empower developers worldwide. 
+        Our mission is to deliver high-quality, reliable data endpoints that accelerate development and inspire innovation.
+        <br><br>
+        Founded in 2023, we've grown to serve over <span class="about-highlight">50,000 developers</span> monthly with our diverse collection of APIs including Books, Movies, Quotes, Jokes, and User data. 
+        All our APIs are meticulously maintained, regularly updated, and completely free to use.
+        <br><br>
+        Whether you're building educational apps, entertainment platforms, or just experimenting with new technologies, 
+        AquaScript provides the data infrastructure you need to bring your ideas to life.
+      </p>
+      <a href="index.html" class="btn-explore">Explore Our APIs</a>
+      
+      <div class="stats-container">
+        <div class="stat-box">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">API Categories</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Monthly Users</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">99.9%</div>
+          <div class="stat-label">Uptime</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Support</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="footer-brand d-flex align-items-center mb-3">
+            <img src="assets/background-removed.png" alt="AquaScript Logo" height="40">
+          </div>
+          <p class="footer-text text-start">Providing high-quality JSON APIs for developers worldwide. Fast, reliable, and free to use.</p>
+          <div class="social-links mt-4">
+            <a href="https://github.com/KelvinCode1234"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h5 class="footer-heading">Resources</h5>
+          <ul class="footer-links">
+            <li><a href="docs.html">Documentation</a></li>
+            <li><a href="#">API Status</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Tutorials</a></li>
+          </ul>
+        </div>
+        
+        
+        <div class="col-lg-4 col-md-4">
+          <h5 class="footer-heading">Subscribe to our Newsletter</h5>
+          <p class="footer-text">Get updates on new APIs and features</p>
+          <form class="newsletter-form">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email" required>
+              <button class="btn btn-subscribe" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="fw-bold text-center ">         
+              <p class="copyright">&copy; 2023 AquaScript. All rights reserved</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-<!-- Bootstrap JS Bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Smooth scroll -->
-<script>
-  $(document).ready(function(){
-    $("a[href^='#']").on('click', function(event) {
-      var target = $(this.getAttribute('href'));
-      if(target.length){
-        event.preventDefault();
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top
-        }, 1000);
-      }
+  <script src="nav/nav.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.nav-link').hover(function () {
+        $(this).css('text-shadow', '0 0 15px #ff6ec4');
+      }, function () {
+        $(this).css('text-shadow', 'none');
+      });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
