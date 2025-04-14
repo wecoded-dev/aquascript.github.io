@@ -46,7 +46,6 @@ AquaScript is built using modern and efficient web technologies:
 - HTML5  
 - CSS3  
 - JavaScript  
-- Java  
 - Bootstrap  
 - jQuery  
 - JSON  
