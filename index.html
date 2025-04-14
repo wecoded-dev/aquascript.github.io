@@ -175,7 +175,6 @@
           </div>
           <p class="footer-text text-start">Providing high-quality JSON APIs for developers worldwide. Fast, reliable, and free to use.</p>
           <div class="social-links">
-            <!-- Replace # with your actual social links -->
             <a href="https://github.com/yourusername" 
                class="social-icon" 
                target="_blank" 
@@ -217,11 +216,12 @@
         <div class="col-lg-4 col-md-4">
           <h5 class="footer-heading">Subscribe to our Newsletter</h5>
           <p class="footer-text">Get updates on new APIs and features</p>
-          <form class="newsletter-form" href="mailto: hanzlabaig917@gmail.com">
+          <form class="newsletter-form" onsubmit="handleSubscription(event)">
             <div class="input-group mb-3">
               <input type="email" class="form-control" placeholder="Your email" required>
               <button class="btn btn-subscribe" type="submit">Subscribe</button>
             </div>
+            <div id="toast-message" class="mt-1 text-success" style="display: none;">Thanks for subscribing!</div>
           </form>
         </div>
       </div>
@@ -236,6 +236,8 @@
     </div>
   </footer>
 
+
+  <script src="contact/Contact.js"></script>
   <script src="nav/nav.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
