@@ -1,6 +1,6 @@
 let books = [];
 
-fetch("books.json")
+fetch("./api/books.json")
   .then((response) => response.json())
   .then((data) => {
     books = data;
