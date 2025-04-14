@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beautiful Advanced Contact Form</title>
+  <style>
+    :root {
+      --sky: #87ceeb;
+      --white: #ffffff;
+      --pinky: #ffc0cb;
+      --text-color: #333;
+      --radius: 1.5rem;
+      --transition: 0.4s;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--sky), var(--white), var(--pinky));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      animation: backgroundMove 15s infinite alternate;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    form {
+      background: var(--white);
+      padding: 2.5rem 3rem;
+      border-radius: var(--radius);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      animation: fadeIn 1.2s ease;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      color: var(--sky);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    input, textarea {
+      padding: 1rem;
+      border: 2px solid var(--sky);
+      border-radius: var(--radius);
+      background: var(--white);
+      font-size: 1rem;
+      color: var(--text-color);
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--pinky);
+      box-shadow: 0 0 10px var(--pinky);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    button {
+      padding: 1rem;
+      border: none;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--sky), var(--pinky));
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, var(--pinky), var(--sky));
+      transform: scale(1.05);
+    }
+
+    /* Hide honeypot */
+    .hidden {
+      display: none;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      color: var(--sky);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      form {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<form action="https://api.web3forms.com/submit" method="POST">
+  <h2>Contact Us</h2>
+
+  <input type="hidden" name="access_key" value="91518187-55af-467c-9690-8d7994a937ca">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Your Name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="your@email.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea name="message" id="message" placeholder="Write your message..." required></textarea>
+  </div>
+
+  <!-- Honeypot Spam Protection -->
+  <input type="checkbox" name="botcheck" class="hidden">
+
+  <!-- Optional: Redirect to a custom page after submission -->
+  <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you.html"> -->
+
+  <button type="submit">Send Message</button>
+</form>
+
+</body>
+</html>
