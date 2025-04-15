@@ -61,8 +61,8 @@ body {
 }
 
 .navbar-brand img {
-  height: 40px;
-  animation: glow 2s infinite alternate;
+  height: 45px;
+  filter: brightness(2);
 }
 
 @keyframes glow {
@@ -225,5 +225,9 @@ body {
   }
   .search-input::placeholder {
     font-size: 12px;
+  }
+
+  .api-endpoint {
+    font-size: 10px;
   }
 }
