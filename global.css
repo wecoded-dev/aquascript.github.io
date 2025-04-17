@@ -141,7 +141,7 @@ h1,h3,p {
 .api-icon {
   font-size: 3rem;
   margin-bottom: 20px;
-  background: linear-gradient(to right, #00f7ff, #ff0099);
+  background: linear-gradient(to right, #12c4ca, #ff0099);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
