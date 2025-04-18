@@ -14,6 +14,7 @@ Welcome to **AquaScript** — a fast, simple, and developer-friendly platform to
 ---
 
 ## 🚀 About AquaScript  
+![Preview](assets/previewimg.png)
 
 **AquaScript** is your go-to solution for generating fake, yet realistic, JSON data across a variety of categories. Whether you're building a frontend UI, testing backend endpoints, or prototyping an entire app — AquaScript lets you plug in mock data without the hassle of setting up a database or dealing with real information.
 
